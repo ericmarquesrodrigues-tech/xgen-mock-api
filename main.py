@@ -580,7 +580,7 @@ def nfse(payload: dict):
     req = payload.get("Request", {})
 
     # ===== EXEMPLO 01 – NFSE BÁSICA =====
-    if req.get("docnum") == "000001234567":
+    if req.get("docnum") == "000001234567" and exercicio == "2024":
         return {
             "Response": {
                 "docnum": "000001234567",
@@ -590,7 +590,7 @@ def nfse(payload: dict):
         }
 
     # ===== EXEMPLO 02 – NFSE COM DESCRIÇÃO DETALHADA =====
-    if req.get("docnum") == "000005678901":
+    if req.get("docnum") == "000005678901" and exercicio == "2024":
         return {
             "Response": {
                 "docnum": "000005678901",
@@ -600,7 +600,7 @@ def nfse(payload: dict):
         }
 
     # ===== EXEMPLO 03 – NFSE EMITIDA COM SUCESSO =====
-    if req.get("docnum") == "000009012345":
+    if req.get("docnum") == "000009012345" and exercicio == "2024":
         return {
             "Response": {
                 "docnum": "000009012345",
@@ -610,7 +610,7 @@ def nfse(payload: dict):
         }
 
     # ===== EXEMPLO 04 – NFSE COM RETENÇÃO =====
-    if req.get("docnum") == "000003456789":
+    if req.get("docnum") == "000003456789" and exercicio == "2024":
         return {
             "Response": {
                 "docnum": "000003456789",
@@ -620,7 +620,7 @@ def nfse(payload: dict):
         }
 
     # ===== EXEMPLO 05 – NFSE CANCELADA =====
-    if req.get("docnum") == "000002891567":
+    if req.get("docnum") == "000002891567" and exercicio == "2024":
         return {
             "Response": {
                 "docnum": "000002891567",
@@ -630,7 +630,7 @@ def nfse(payload: dict):
         }
 
     # ===== EXEMPLO 06 – NFSE COMPLEMENTAR =====
-    if req.get("docnum") == "000008765432":
+    if req.get("docnum") == "000008765432" and exercicio == "2024":
         return {
             "Response": {
                 "docnum": "000008765432",
@@ -640,7 +640,7 @@ def nfse(payload: dict):
         }
 
     # ===== EXEMPLO 07 – NFSE DE GRANDE VOLUME =====
-    if req.get("docnum") == "000001234568":
+    if req.get("docnum") == "000001234568" and exercicio == "2024":
         return {
             "Response": {
                 "docnum": "000001234568",
@@ -660,7 +660,7 @@ def rps(payload: dict):
     req = payload.get("Request", {})
 
     # ===== EXEMPLO 01 – RPS SIMPLES =====
-    if req.get("docnum") == "000001234567" and req.get("item") == "001":
+    if req.get("docnum") == "000001234567" and req.get("item") == "001" and req.get("exercicio") == "2024":
         return {
             "Response": {
                 "docnum": "000001234567",
@@ -671,7 +671,7 @@ def rps(payload: dict):
         }
 
     # ===== EXEMPLO 02 – RPS COM VALOR ALTO =====
-    if req.get("docnum") == "000005678901" and req.get("item") == "001":
+    if req.get("docnum") == "000005678901" and req.get("item") == "001" and req.get("exercicio") == "2024":
         return {
             "Response": {
                 "docnum": "000005678901",
@@ -682,7 +682,7 @@ def rps(payload: dict):
         }
 
     # ===== EXEMPLO 03 – RPS COM MÚLTIPLOS ITENS =====
-    if req.get("docnum") == "000009012345" and req.get("item") == "001":
+    if req.get("docnum") == "000009012345" and req.get("item") == "001" and req.get("exercicio") == "2024":
         return {
             "Response": {
                 "docnum": "000009012345",
@@ -693,7 +693,7 @@ def rps(payload: dict):
         }
 
     # ===== EXEMPLO 04 – RPS PARA SERVIÇO NÃO TRIBUTÁVEL =====
-    if req.get("docnum") == "000003456789" and req.get("item") == "001":
+    if req.get("docnum") == "000003456789" and req.get("item") == "001" and req.get("exercicio") == "2024":
         return {
             "Response": {
                 "docnum": "000003456789",
@@ -704,7 +704,7 @@ def rps(payload: dict):
         }
 
     # ===== EXEMPLO 05 – RPS COM DESCONTO =====
-    if req.get("docnum") == "000002891567" and req.get("item") == "001":
+    if req.get("docnum") == "000002891567" and req.get("item") == "001" and req.get("exercicio") == "2024":
         return {
             "Response": {
                 "docnum": "000002891567",
@@ -715,7 +715,7 @@ def rps(payload: dict):
         }
 
     # ===== EXEMPLO 06 – RPS RETIFICADO =====
-    if req.get("docnum") == "000008765432" and req.get("item") == "001":
+    if req.get("docnum") == "000008765432" and req.get("item") == "001" and req.get("exercicio") == "2024":
         return {
             "Response": {
                 "docnum": "000008765432",
@@ -726,7 +726,7 @@ def rps(payload: dict):
         }
 
     # ===== EXEMPLO 07 – RPS COM RETENÇÃO =====
-    if req.get("docnum") == "000001234568" and req.get("item") == "001":
+    if req.get("docnum") == "000001234568" and req.get("item") == "001" and req.get("exercicio") == "2024":
         return {
             "Response": {
                 "docnum": "000001234568",
